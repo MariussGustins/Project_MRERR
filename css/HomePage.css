@@ -148,6 +148,13 @@
     height: 28px;
      background-color: var(--color-red);
 
+}.home-page-child22 button{
+    width: 43px;
+    height: 28px;background-color: var(--color-gainsboro-100);
+
+}.home-page-child21 button{
+    width: 43px;
+    height: 28px;background-color: var(--color-gainsboro-100);
 }
 .home-page-child19,
 .home-page-child20,
