@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <form action="process.php" method="POST" id="itemForm">
+
+        <link rel="stylesheet" href="styleitemregistration.css">
+        </head>
+<body>
+<center>
+    <h1>Item Registration</h1>
+</center>
+<center>
+    <form action="process.php" method="POST">
+        <label for="item_name">Item:</label>
+        <input type="text" id="item_name" name="item_name" required><br><br>
+
+        <label for="barcode_seller">Barcode (seller):</label>
+        <input type="text" id="barcode_seller" name="barcode_seller" required><br><br>
+
+        <label for="barcode_manufacturer">Barcode (manufacturer):</label>
+        <input type="text" id="barcode_manufacturer" name="barcode_manufacturer" required><br><br>
+
+        <label for="delivery_date_time">Delivery date and time:</label>
+        <input type="text" id="delivery_date_time" name="delivery_date_time" required><br><br>
+
+        <label for="delivery_contact_person">Delivery contact person:</label>
+        <input type="text" id="delivery_contact_person" name="delivery_contact_person" required><br><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" step="1" required><br><br>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" step="1" required><br><br>
+
+        <label for="serial_nr">Serial nr:</label>
+        <input type="text" id="serial_nr" name="serial_nr" required><br><br>
+
+        <input type="submit" value="Add">
+
+        <input type="submit" value="Delete" id="deleteButton" onclick="deleteItem()">
+
+        <input type="submit" value="Back to login">
+    </form>
+</center>
+<script src="scriptitemregistration.js"></script>
+</body>
+</html>
