@@ -97,7 +97,9 @@
 }
 
 .amount1,
+
 .delivery-contact-person,
+
 .price1 {
     position: absolute;
     top: 271px;
@@ -168,6 +170,7 @@
 .group-child1 {
     left: 37px;
 }
+
 .group-div,
 .group-icon1,
 .rectangle-container {
