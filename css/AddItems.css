@@ -51,6 +51,13 @@
     top: 139px;
     left: 59px;
 }
+.item1 [input] {
+    position: absolute;
+    top: 139px;
+    left: 59px;
+     width: 443px;
+     height: 29px;
+}
 .group-item {
     top: 0;
     left: 0;
@@ -59,6 +66,16 @@
     box-sizing: border-box;
     width: 210px;
     height: 29px;
+}
+.add-items-item input[type=text]{
+    width: 436px;
+    height: 29px;
+    background-color: var(--color-gainsboro-100);
+}
+::placeholder{
+    font-size: var(--font-size-base);
+    color: var(--color-black);
+    font-family: var(--font-inter);
 }
 .add,
 .rectangle-group {
@@ -78,6 +95,7 @@
     top: 227px;
     left: 59px;
 }
+
 .amount1,
 .delivery-contact-person,
 .price1 {
@@ -85,6 +103,17 @@
     top: 271px;
     left: 59px;
 }
+.add-date-and input[type=text]{
+    width: 436px;
+    height: 29px;
+    background-color: var(--color-gainsboro-100);
+}
+::placeholder{
+    font-size: var(--font-size-base);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+}
+
 .amount1,
 .price1 {
     top: 315px;
