@@ -1,0 +1,270 @@
+.home-page-child,
+.home-page-inner,
+.home-page-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-gainsboro-100);
+    width: 543px;
+    height: 37px;
+}
+.home-page-inner,
+.home-page-item {
+    top: 100px;
+    left: 16px;
+    width: 512px;
+    height: 28px;
+}
+.home-page-inner {
+    top: 128px;
+    background-color: var(--color-white);
+}
+.home-page-child1,
+.home-page-child2,
+.home-page-child3 {
+    position: absolute;
+    top: 156px;
+    left: 16px;
+    background-color: var(--color-whitesmoke);
+    width: 512px;
+    height: 28px;
+}
+.home-page-child2,
+.home-page-child3 {
+    top: 184px;
+    background-color: var(--color-white);
+}
+.home-page-child3 {
+    top: 212px;
+    background-color: var(--color-whitesmoke);
+}
+.home-page-child4,
+.home-page-child5,
+.home-page-child6 {
+    position: absolute;
+    top: 240px;
+    left: 16px;
+    background-color: var(--color-white);
+    width: 512px;
+    height: 28px;
+}
+.home-page-child5,
+.home-page-child6 {
+    top: 268px;
+    background-color: var(--color-whitesmoke);
+}
+.home-page-child6 {
+    top: 296px;
+    background-color: var(--color-white);
+}
+.home-page-child7,
+.home-page-child8,
+.home-page-child9 {
+    position: absolute;
+    top: 324px;
+    left: 16px;
+    background-color: var(--color-whitesmoke);
+    width: 512px;
+    height: 28px;
+}
+.home-page-child8,
+.home-page-child9 {
+    top: 352px;
+    background-color: var(--color-white);
+}
+.home-page-child9 {
+    top: 380px;
+    background-color: var(--color-whitesmoke);
+}
+.home-page-child10,
+.home-page-child11,
+.home-page-child12 {
+    position: absolute;
+    top: 408px;
+    left: 16px;
+    background-color: var(--color-white);
+    width: 512px;
+    height: 28px;
+}
+.home-page-child11,
+.home-page-child12 {
+    top: 436px;
+    background-color: var(--color-whitesmoke);
+}
+.home-page-child12 {
+    top: 464px;
+    background-color: var(--color-white);
+}
+.home-page-child13,
+.home-page-child14,
+.home-page-child16,
+.home-page-child17,
+.home-page-child18 {
+    position: absolute;
+    top: 100px;
+    left: 16px;
+    background-color: var(--color-gainsboro-200);
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+    width: 43px;
+    height: 364px;
+}
+.home-page-child14,
+.home-page-child16,
+.home-page-child17,
+.home-page-child18 {
+    width: 512px;
+    height: 28px;
+}
+.home-page-child16,
+.home-page-child17,
+.home-page-child18 {
+    left: 58px;
+    width: 171px;
+    height: 364px;
+}
+.home-page-child17,
+.home-page-child18 {
+    left: 228px;
+    width: 173px;
+}
+.home-page-child18 {
+    left: 400px;
+    width: 128px;
+}
+.home-page-child19 {
+    position: absolute;
+    top: 54px;
+    left: 16px;
+    background-color: #605cff;
+}
+.home-page-child19,
+.home-page-child20,
+.home-page-child21,
+.home-page-child22 {
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+    width: 43px;
+    height: 28px;
+}
+.home-page-child20 {
+    position: absolute;
+    top: 54px;
+    left: 58px;
+    background-color: var(--color-red);
+}
+.home-page-child21,
+.home-page-child22 {
+    background-color: var(--color-gainsboro-100);
+}
+.home-page-child21 {
+    position: absolute;
+    top: 53px;
+    left: 358px;
+}
+.home-page-child22 {
+    left: 316px;
+}
+.div,
+.home-page-child22,
+.home-page-child23 {
+    position: absolute;
+    top: 53px;
+}
+.home-page-child23 {
+    left: 400px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+    width: 128px;
+    height: 28px;
+}
+.div {
+    left: 30px;
+    font-size: 24px;
+    color: var(--color-white);
+}
+.image-2-icon,
+.search {
+    position: absolute;
+    top: 59px;
+    left: 410px;
+}
+.image-2-icon {
+    top: 58px;
+    left: 370px;
+    width: 19px;
+    height: 19px;
+    object-fit: cover;
+}
+.barcode,
+.id,
+.item2 {
+    position: absolute;
+    top: 105px;
+    left: 30px;
+}
+.barcode,
+.item2 {
+    left: 127px;
+}
+.barcode {
+    left: 283px;
+}
+.date-and-time,
+.items-table {
+    position: absolute;
+    top: 105px;
+    left: 411px;
+}
+.items-table {
+    top: 59px;
+    left: 174px;
+}
+.trash-can-11s-200px-1 {
+    position: absolute;
+    top: 56px;
+    left: 68px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+}
+.barcode-100s-19px-2-icon,
+.copyright-100s-27px-1-icon {
+    position: absolute;
+    top: 54px;
+    left: 325px;
+    width: 26px;
+    height: 26px;
+    overflow: hidden;
+}
+.copyright-100s-27px-1-icon {
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+}
+.roberts-blite-310gr {
+    position: absolute;
+    top: 3px;
+    left: 18px;
+}
+.copyright-100s-27px-1-parent {
+    position: absolute;
+    top: 496px;
+    left: 11px;
+    width: 114px;
+    height: 18px;
+    font-size: 10px;
+}
+.home-page {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+}

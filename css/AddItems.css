@@ -1,0 +1,185 @@
+.add-items-child {
+    position: absolute;
+    top: 178px;
+    left: 50px;
+    background-color: var(--color-gainsboro-100);
+    width: 201px;
+    height: 29px;
+}
+.add-items-child1,
+.add-items-child2,
+.add-items-child3,
+.add-items-child4,
+.add-items-inner,
+.add-items-item {
+    position: absolute;
+    top: 134px;
+    left: 50px;
+    background-color: var(--color-gainsboro-100);
+    width: 443px;
+    height: 29px;
+}
+.add-items-child1,
+.add-items-child2,
+.add-items-child3,
+.add-items-child4,
+.add-items-inner {
+    top: 222px;
+}
+.add-items-child1,
+.add-items-child2,
+.add-items-child3,
+.add-items-child4 {
+    top: 266px;
+}
+.add-items-child2,
+.add-items-child3,
+.add-items-child4 {
+    top: 310px;
+    width: 102px;
+}
+.add-items-child3,
+.add-items-child4 {
+    left: 222px;
+}
+.add-items-child4 {
+    left: 393px;
+}
+.group-item,
+.item1 {
+    position: absolute;
+    top: 139px;
+    left: 59px;
+}
+.group-item {
+    top: 0;
+    left: 0;
+    background-color: #0029ff;
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+    width: 210px;
+    height: 29px;
+}
+.add,
+.rectangle-group {
+    position: absolute;
+    top: 5px;
+    left: 90px;
+}
+.rectangle-group {
+    top: 417px;
+    left: 167px;
+    width: 210px;
+    height: 29px;
+    color: var(--color-white);
+}
+.delivery-date-and {
+    position: absolute;
+    top: 227px;
+    left: 59px;
+}
+.amount1,
+.delivery-contact-person,
+.price1 {
+    position: absolute;
+    top: 271px;
+    left: 59px;
+}
+.amount1,
+.price1 {
+    top: 315px;
+}
+.price1 {
+    left: 231px;
+}
+.barcode-seller1,
+.serial-nr1 {
+    position: absolute;
+    top: 315px;
+    left: 403px;
+}
+.barcode-seller1 {
+    top: 183px;
+    left: 59px;
+}
+.add-items-child5,
+.add-items-child6 {
+    position: absolute;
+    top: 178px;
+    left: 292px;
+    background-color: var(--color-gainsboro-100);
+    width: 201px;
+    height: 29px;
+}
+.add-items-child6 {
+    top: 0;
+    left: 0;
+    width: 543px;
+    height: 37px;
+}
+.barcode-manufacturer1 {
+    position: absolute;
+    top: 183px;
+    left: 298px;
+}
+.item-registration {
+    position: absolute;
+    top: 76px;
+    left: 211px;
+}
+.group-child1,
+.group-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-gainsboro-100);
+    width: 30px;
+    height: 30px;
+}
+.group-child1 {
+    left: 37px;
+}
+.group-div,
+.group-icon1,
+.rectangle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 67px;
+    height: 30px;
+}
+.group-div,
+.group-icon1 {
+    top: 379px;
+    left: 240px;
+}
+.group-icon1 {
+    height: 3.85%;
+    width: 3.68%;
+    top: 73.85%;
+    right: 51.2%;
+    bottom: 22.31%;
+    left: 45.12%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.barcode-100s-19px-1-icon {
+    position: absolute;
+    top: 381px;
+    left: 279px;
+    width: 26px;
+    height: 26px;
+    overflow: hidden;
+}
+.add-items {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+}
