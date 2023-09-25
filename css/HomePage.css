@@ -136,7 +136,18 @@
     position: absolute;
     top: 54px;
     left: 16px;
+    /*z-index: 0;*/
+}
+.home-page-child19 button{
+    width: 43px;
+    height: 28px;
     background-color: #605cff;
+    position: absolute;
+}.home-page-child20 button{
+    width: 43px;
+    height: 28px;
+     background-color: var(--color-red);
+
 }
 .home-page-child19,
 .home-page-child20,
@@ -151,7 +162,6 @@
     position: absolute;
     top: 54px;
     left: 58px;
-    background-color: var(--color-red);
 }
 .home-page-child21,
 .home-page-child22 {

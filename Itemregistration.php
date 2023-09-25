@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "your_username";
-$password = "your_password";
-$dbname = "your_database_name";
+$username = "root";
+$password = "";
+$dbname = "project_mrderr";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -19,7 +19,7 @@ $amount = $_POST['amount'];
 $price = $_POST['price'];
 $serial_nr = $_POST['serual_nr'];
 
-$sql = "INSERT INTO items (item, barcode_seller, barcode_manufacter, delivery_date_time, dalivery_contact_person, amount, price, serial_nr) VALUES ('$item', '$barcode_seller', '$barcode_manufacter', '$delivery_date_time', '$delivery_contact_person', $amount, $price, '$serial_nr')";
+$sql = "INSERT INTO items (item, barcode_seller, barcode_manufacturer, delivery_date_time, delivery_contact_person, amount, price, serial_nr) VALUES ('$item', '$barcode_seller', '$barcode_manufacter', '$delivery_date_time', '$delivery_contact_person', $amount, $price, '$serial_nr')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Item registered successfully!";
