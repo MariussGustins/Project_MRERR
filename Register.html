@@ -11,29 +11,41 @@
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
   />
 </head>
-<!--man patik negeri-->
 <body>
-<div class="register">
-  <div class="sign-up">Sign up</div>
-  <div class="register-child"></div>
-  <div class="first-name">First name</div>
-  <div class="register-item"></div>
-  <div class="register-inner"></div>
-  <div class="register-child1"></div>
-  <div class="register-child2"></div>
-  <div class="register-child3"></div>
-  <div class="register-child4"></div>
-  <div class="last-name">Last name</div>
-  <div class="email">Email</div>
-  <div class="username">Username</div>
-  <div class="password">Password</div>
-  <div class="repeat-password">Repeat password</div>
-  <div class="complete-sign-up">Complete sign up</div>
-  <div class="register-child5"></div>
-  <div class="i-agree-to-container">
-    <span>I agree to </span>
-    <span class="terms-of-user">Terms of User</span>
-  </div>
+<div class="signup-container">
+  <h2>Sign Up</h2>
+  <form action="#" method="post" id="signup-form">
+    <div class="form-group">
+      <div class="name-group">
+        <div class="first-name">
+          <input type="text" id="first-name" name="first-name" placeholder="first name" required>
+        </div>
+        <div class="last-name">
+          <input type="text" id="last-name" name="last-name" placeholder="last name" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="email" id="email" name="email" placeholder="email" required>
+    </div>
+    <div class="form-group">
+      <input type="text" id="username" name="username" placeholder="username" required>
+    </div>
+    <div class="form-group">
+      <input type="password" id="password" name="password" placeholder="password" required>
+    </div>
+    <div class="form-group">
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="confirm password" required>
+    </div>
+    <div class="form-group">
+      <label>
+        <input type="checkbox" id="agree-terms" name="agree-terms" required> I agree to the Terms and Services
+      </label>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn">Complete Signup</button>
+    </div>
+  </form>
 </div>
 </body>
 </html>
