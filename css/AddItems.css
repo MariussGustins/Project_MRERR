@@ -225,6 +225,16 @@
     height: 30px;
 
 }
+.group-item button{
+    top: 0;
+    left: 0;
+    background-color: #0029ff;
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+    width: 210px;
+    height: 29px;
+    color: var(--color-white);
+}
 .group-child1 img{
     width:30px;
     height:30px;
