@@ -10,7 +10,17 @@
 .remove-items-item {
     top: 134px;
     width: 443px;
+}.remove-items-item input[type=text]{
+    top: 134px;
+    width: 435px;
+     height: 29px;
+     background-color: var(--color-gainsboro-100);
 }
+ ::placeholder{
+     font-size: var(--font-size-base);
+     color: var(--color-black);
+     font-family: var(--font-inter);
+ }
 .rectangle-div,
 .remove-items-child1,
 .remove-items-child2,
