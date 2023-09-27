@@ -11,6 +11,7 @@
 .add-items-child3,
 .add-items-child4,
 .add-items-inner,
+.add-items-contact,
 .add-items-item {
     position: absolute;
     top: 134px;
@@ -19,10 +20,15 @@
     width: 443px;
     height: 29px;
 }
+
+.add-items-contact{
+    top:264px!important;
+}
 .add-items-child1,
 .add-items-child2,
 .add-items-child3,
 .add-items-child4,
+.add-items-contact,
 .add-items-inner {
     top: 222px;
 }
@@ -37,6 +43,51 @@
 .add-items-child4 {
     top: 310px;
     width: 102px;
+}
+.add-items-child3 input[type=number]{
+    width:94px;
+    top:310px;
+    height: 23px;
+    text-align: center;
+    background-color: var(--color-gainsboro-100);
+}
+.add-items-child2 input[type=number]{
+    width:94px;
+    top:310px;
+    height: 23px;
+    text-align: center;
+    background-color: var(--color-gainsboro-100);
+}
+.add-items-child4 input[type=number]{
+    width:94px;
+    top:310px;
+    height: 23px;
+    text-align: center;
+    background-color: var(--color-gainsboro-100);
+}
+.add-items-child input[type=text]{
+    width:193px;
+    top:310px;
+    height: 23px;
+    background-color: var(--color-gainsboro-100);
+}
+.add-items-child5 input[type=text]{
+    width:193px;
+    top:310px;
+    height: 23px;
+    background-color: var(--color-gainsboro-100);
+}
+
+.add-items-contact input[type=text]{
+    width:435px;
+    top:310px;
+    height: 23px;
+    background-color: var(--color-gainsboro-100);
+}.add-items-inner input[type=datetime-local]{
+    width:438px;
+    top:310px;
+    height: 25px;
+    background-color: var(--color-gainsboro-100);
 }
 .add-items-child3,
 .add-items-price4 {
