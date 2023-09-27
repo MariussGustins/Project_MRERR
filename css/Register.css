@@ -48,3 +48,8 @@ body {
 .btn:hover {
     background-color: #0056b3;
 }
+::placeholder{
+    font-size: var(--font-size-base);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+}
