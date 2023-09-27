@@ -48,3 +48,7 @@ body {
 .btn:hover {
     background-color: #0056b3;
 }
+
+.formesnz{
+    display: flex;
+}
