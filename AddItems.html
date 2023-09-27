@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="./css/AddItems.css" />
   <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
-  />
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
 </head>
 <body>
 <div class="add-items">
@@ -17,8 +16,12 @@
   <div class="add-items-item">
     <input type="text" id="item1" name="item1" placeholder="Item" required><br><br>
   </div>
+  <div class="add-items-amount">
+    <input type="text" id="amount1" name="amount1" placeholder="Amount" required><br><br>
+  </d>
   <div class="add-items-inner"></div>
-  <div class="add-items-child1">
+
+  <div class="add-items-contact">
     <input type="text" id="delivery-contact-person" name="delivery-contact-person" placeholder="Delivery contact person" required><br><br>
   </div>
   <div class="add-items-child2"></div>
@@ -38,9 +41,11 @@
 <!--  <label class="delivery-contact-person">Delivery contact person</label>-->
 
 
-  <div class="amount1">Amount</div>
+  <label for="amount1">
+<input type="text" placeholder="Amount" name="amount1" id="amount1" required>
+  </label>
 
-  <div class="price1">Price</div>
+    <div class="price1">Price</div>
 
   <div class="serial-nr1">Serial nr.</div>
 
@@ -48,7 +53,8 @@
 
   <div class="add-items-child5"></div>
   <div class="add-items-child6"></div>
-  <div class="barcode-manufacturer1">Barcode (manufacturer)</div>
+
+  <label class="barcode-manufacturer1">Barcode (manufacturer)</label>
 
   <div class="item-registration">Item registration</div>
 
