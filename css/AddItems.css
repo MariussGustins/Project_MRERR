@@ -207,8 +207,7 @@
     top: 76px;
     left: 211px;
 }
-.group-contact,
-.group-inner {
+.group-contact {
     position: absolute;
     top: 0;
     left: -12px;
@@ -216,14 +215,31 @@
     width: 30px;
     height: 30px;
 }
-.group-child1{
+.group-inner button {
     position: absolute;
+    padding: 1px 1px;
+    top: 0;
+    left: -12px;
+    background-color: var(--color-gainsboro-100);
+    width: 34px;
+    height: 30px;
+}
+/*.group-child1{*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 43px;*/
+/*    */
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*}*/
+.group-child1 button {
+    position: absolute;
+    padding: 0px 1px;
     top: 0;
     left: 43px;
     background-color: var(--color-gainsboro-100);
-    width: 30px;
+    width: 34px;
     height: 30px;
-
 }
 .group-item button{
     top: 0;
