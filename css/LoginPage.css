@@ -7,6 +7,22 @@
     width: 284px;
     height: 61px;
 }
+.login-page-child input[type=text]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-gainsboro-100);
+    width: 275px;
+    height: 55px;
+}
+.login-page-item input[type=text]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-gainsboro-100);
+    width: 275px;
+    height: 55px;
+}
 .login-page-item {
     top: 314px;
 }
@@ -30,6 +46,18 @@
 .login-page-inner {
     left: 120px;
     background-color: var(--color-gainsboro-100);
+
+}.login-page-inner button{
+    left: 120px;
+    background-color: var(--color-gainsboro-100);
+     width: 110px;
+     height: 37px;
+}
+.login-page-child1 button{
+    left: 294px;
+    background-color: #5445ff;
+     width: 110px;
+     height: 37px;
 }
 .login-page-child1 {
     left: 294px;
@@ -68,6 +96,11 @@
     overflow: hidden;
     text-align: left;
     font-size: var(--font-size-mini);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+}
+::placeholder{
+    font-size: var(--font-size-base);
     color: var(--color-black);
     font-family: var(--font-inter);
 }

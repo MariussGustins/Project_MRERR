@@ -11,6 +11,7 @@
 .add-items-child3,
 .add-items-child4,
 .add-items-inner,
+.add-items-contact,
 .add-items-item {
     position: absolute;
     top: 134px;
@@ -19,10 +20,15 @@
     width: 443px;
     height: 29px;
 }
+
+.add-items-contact{
+    top:264px!important;
+}
 .add-items-child1,
 .add-items-child2,
 .add-items-child3,
 .add-items-child4,
+.add-items-contact,
 .add-items-inner {
     top: 222px;
 }
@@ -38,8 +44,53 @@
     top: 310px;
     width: 102px;
 }
+.add-items-child3 input[type=number]{
+    width:94px;
+    top:310px;
+    height: 23px;
+    text-align: center;
+    background-color: var(--color-gainsboro-100);
+}
+.add-items-child2 input[type=number]{
+    width:94px;
+    top:310px;
+    height: 23px;
+    text-align: center;
+    background-color: var(--color-gainsboro-100);
+}
+.add-items-child4 input[type=number]{
+    width:94px;
+    top:310px;
+    height: 23px;
+    text-align: center;
+    background-color: var(--color-gainsboro-100);
+}
+.add-items-child input[type=text]{
+    width:193px;
+    top:310px;
+    height: 23px;
+    background-color: var(--color-gainsboro-100);
+}
+.add-items-child5 input[type=text]{
+    width:193px;
+    top:310px;
+    height: 23px;
+    background-color: var(--color-gainsboro-100);
+}
+
+.add-items-contact input[type=text]{
+    width:435px;
+    top:310px;
+    height: 23px;
+    background-color: var(--color-gainsboro-100);
+}.add-items-inner input[type=datetime-local]{
+    width:438px;
+    top:310px;
+    height: 25px;
+    background-color: var(--color-gainsboro-100);
+}
 .add-items-child3,
-.add-items-child4 {
+.add-items-price4 {
     left: 222px;
 }
 .add-items-child4 {
@@ -95,9 +146,11 @@
     top: 227px;
     left: 59px;
 }
-
-.amount1,
-
+.add-items-amount input[type=text] {
+    width: 436px;
+    height: 29px;
+    background-color: var(--color-gainsboro-100);
+}
 .delivery-contact-person,
 
 .price1 {
@@ -105,18 +158,14 @@
     top: 271px;
     left: 59px;
 }
-.add-date-and input[type=text]{
-    width: 436px;
-    height: 29px;
-    background-color: var(--color-gainsboro-100);
-}
+
 ::placeholder{
     font-size: var(--font-size-base);
     color: var(--color-black);
     font-family: var(--font-inter);
 }
 
-.amount1,
+
 .price1 {
     top: 315px;
 }
@@ -158,16 +207,60 @@
     top: 76px;
     left: 211px;
 }
-.group-child1,
-.group-inner {
+.group-contact {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -12px;
     background-color: var(--color-gainsboro-100);
     width: 30px;
     height: 30px;
 }
-.group-child1 {
+.group-inner button {
+    position: absolute;
+    padding: 1px 1px;
+    top: 0;
+    left: -12px;
+    background-color: var(--color-gainsboro-100);
+    width: 34px;
+    height: 30px;
+}
+/*.group-child1{*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 43px;*/
+/*    */
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*}*/
+.group-child1 button {
+    position: absolute;
+    padding: 0px 1px;
+    top: 0;
+    left: 43px;
+    background-color: var(--color-gainsboro-100);
+    width: 34px;
+    height: 30px;
+}
+.group-item button{
+    top: 0;
+    left: 0;
+    background-color: #0029ff;
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+    width: 210px;
+    height: 29px;
+    color: var(--color-white);
+}
+.group-child1 img{
+    width:30px;
+    height:30px;
+}
+.group-inner img{
+    width:30px;
+    height:30px;
+}
+
+.group-contact {
     left: 37px;
 }
 
