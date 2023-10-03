@@ -186,3 +186,39 @@
     color: var(--color-black);
     font-family: var(--font-inter);
 }
+.group-child1 button {
+    position: absolute;
+    padding: 0px 1px;
+    top: 379px;
+    left: 290px;
+    background-color: var(--color-gainsboro-100);
+    width: 39px;
+    height: 33px;
+}
+.group-item button{
+    top: 0;
+    left: 0;
+    background-color: #0029ff;
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+    width: 210px;
+    height: 29px;
+    color: var(--color-white);
+}
+.group-child1 img{
+    width:30px;
+    height:30px;
+}
+.group-inner img{
+    width:30px;
+    height:30px;
+}
+.group-inner button {
+    position: absolute;
+    padding: 1px 1px;
+    top: 380px;
+    left: 222px;
+    background-color: var(--color-gainsboro-100);
+    width: 42px;
+    height: 32px;
+}
