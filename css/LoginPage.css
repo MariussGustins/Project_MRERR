@@ -88,6 +88,11 @@
     height: 176px;
     object-fit: cover;
 }
+#signup{
+    font-size: var(--font-size-mini);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+}
 .login-page {
     position: relative;
     background-color: var(--color-white);

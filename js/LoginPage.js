@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
         // Display a message in the console when the button is clicked
         console.log("signup button works ;) new css");
     });
+
+    signup.addEventListener("click", function (){
+        window.location.href = "Register.html";
+    });
 });
 
 //LogIn button

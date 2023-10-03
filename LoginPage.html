@@ -13,6 +13,7 @@
   />
 </head>
 <body>
+<form action="./php/login.php" method="post" id="login-form">
 <div class="login-page">
   <div class="login-page-child">
     <input type="text" id="username" name="username" placeholder="Username">
@@ -20,9 +21,7 @@
   <div class="login-page-item">
     <input type="text" id="password" name="password" placeholder="Password">
   </div>
-  <div class="login-page-inner">
-    <button id="signup"></button>
-  </div>
+
   <div class="login-page-child1">
     <button id="login"></button>
   </div>
@@ -30,5 +29,10 @@
   <div class="sign-up1">sign up</div>
   <img class="image-1-icon" alt="" src="./public/logo.png" />
 </div>
+</form>
+<div class="login-page-inner">
+    <button id="signup">sign up</button>
+</div>
+
 </body>
 </html>
