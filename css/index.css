@@ -82,32 +82,47 @@
 }
 .removal-date-and {
     position: absolute;
-    top: 227px;
+    top: 222px;
+    left: 51px;
+    background-color: var(--color-gainsboro-100);
+    width: 201px;
+    height: 29px;
+}.removal-date-and [input] {
+    position: absolute;
+    top: 0px;
     left: 59px;
+    background-color: var(--color-gainsboro-100);
+    width: 100px;
+    height: 29px;
 }
+ .add-removal-date-and{
+     position: absolute;
+     top: 220px;
+     left: 59px;
+ }
 .amount,
 .removal-contact-person {
     position: absolute;
-    top: 271px;
-    left: 59px;
+    top: 265px;
+    left: 51px;
 }
 .amount {
-    top: 315px;
+    top: 310px;
 }
 .barcode-seller,
 .price,
 .serial-nr {
     position: absolute;
-    top: 315px;
-    left: 231px;
+    top: 310px;
+    left: 223px;
 }
 .barcode-seller,
 .serial-nr {
-    left: 403px;
+    left: 394px;
 }
 .barcode-seller {
-    top: 183px;
-    left: 59px;
+    top: 179px;
+    left: 51px;
 }
 .remove-items-child4,
 .remove-items-child5 {
@@ -126,20 +141,39 @@
 }
 .barcode-manufacturer {
     position: absolute;
-    top: 183px;
-    left: 298px;
+    top: 179px;
+    left: 292px;
 }
-.group-icon,
+.group-icon1,
 .item-removal {
     position: absolute;
     top: 76px;
     left: 222px;
 }
-.group-icon {
+.group-icon1 {
     top: 379px;
     left: 237px;
     width: 67px;
     height: 30px;
+}
+.group-icon1 {
+    height: 5.9%;
+    width: 3.68%;
+    top: 95.8%;
+    right: 51.2%;
+    bottom: 22.31%;
+    left: 15.1%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.barcode-100s-19px-1-icon {
+    position: absolute;
+    top: 381px;
+    left: 279px;
+    width: 26px;
+    height: 26px;
+    overflow: hidden;
 }
 .remove-items {
     position: relative;
