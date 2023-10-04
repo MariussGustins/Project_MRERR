@@ -109,3 +109,21 @@
     color: var(--color-black);
     font-family: var(--font-inter);
 }
+/* Style for the red popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 9999;
+}
+/* Style for the error message */
+.error-message {
+    color: red;
+    font-weight: bold;
+}
