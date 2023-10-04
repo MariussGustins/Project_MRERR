@@ -39,9 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "One or more form fields are missing.";
     }
 }
-echo "<pre>";
-print_r($_POST);
-echo "</pre>";
 
 // Close the database connection
 $conn->close();
