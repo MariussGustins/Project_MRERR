@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 
 // Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $first_name = $_POST["first-name"];
+    $first_name = $_POST["first_name"];
     $last_name = $_POST["last-name"];
     $email = $_POST["email"];
     $username = $_POST["username"];

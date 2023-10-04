@@ -11,12 +11,13 @@
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
 </head>
 <body>
+<form action="./php/AddItems.php" method="post" id="login-form">
 <div class="add-items">
   <div class="add-items-child">
     <input type="text" id="barcode" name="barcode" placeholder="Barcode(Seller)">
   </div>
   <div class="add-items-item">
-    <input type="text" id="item1" name="item1" placeholder="Item" required><br><br>
+    <input type="text" id="item_name" name="item_name" placeholder="Item" required><br><br>
   </div>
   <div class="add-items-amount">
 
@@ -26,16 +27,16 @@
   </div>
 
   <div class="add-items-contact">
-    <input type="text" id="delivery-contact-person" name="delivery-contact-person" placeholder="Delivery contact person" required><br><br>
+    <input type="text" id="delivery_contact_person" name="delivery_contact_person" placeholder="Delivery contact person" required><br><br>
   </div>
   <div class="add-items-child2">
     <input type="number" id="amount" name="amount" placeholder="Amount">
   </div>
   <div class="add-items-child3">
-    <input type="number" id="price" name="pice" placeholder="Price">
+    <input type="number" id="price" name="price" placeholder="Price">
   </div>
   <div class="add-items-child4">
-    <input type="number" id="Serial" name="Serial" placeholder="Serial Nr.">
+    <input type="number" id="serial_nr" name="serial_nr" placeholder="Serial Nr.">
   </div>
 
 
@@ -48,10 +49,11 @@
   </div>
 
   <div class="add-items-child5">
-    <input type="text" id="barcode(manu)" name="barcode(manu)" placeholder="Barcode(Manufacturer)">
+    <input type="text" id="barcode_manufacturer" name="barcode_manufacturer" placeholder="Barcode(Manufacturer)">
   </div>
   <div class="add-items-child6"></div>
-
+</div>
+</form>
   <div class="item-registration">Item registration</div>
 
   <div class="group-div">

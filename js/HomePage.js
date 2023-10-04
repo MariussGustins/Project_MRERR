@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
         // Display a message in the console when the button is clicked
         console.log("add button works ;) new css");
     });
+    add_btn.addEventListener("click", function (){
+        window.location.href = "AddItems.html";
+    });
 });
 
 
@@ -21,6 +24,9 @@ document.addEventListener("DOMContentLoaded", function() {
     delete_btn.addEventListener("click", function() {
         // Display a message in the console when the button is clicked
         console.log("delete button works ;) new css");
+    });
+    delete_btn.addEventListener("click", function (){
+        window.location.href = "index.html";
     });
 
 //Search Button
@@ -43,5 +49,8 @@ document.addEventListener("DOMContentLoaded", function() {
     scan_btn.addEventListener("click", function() {
         // Display a message in the console when the button is clicked
         console.log("scan button works ;) new css");
+    });
+    scan_btn.addEventListener("click", function (){
+        window.location.href = "indexQR.html";
     });
 });
