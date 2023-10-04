@@ -1,0 +1,4 @@
+Home Page- search button + atver vairak info
+Home Page- Tabulā izvadās dati konkrētie
+
+index - noņem datus + pogas(piemērs pie add items , jāskatās js fails un html)
