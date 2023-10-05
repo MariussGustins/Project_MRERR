@@ -37,7 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo "Error recording login attempt: " . $conn->error;
             }
         } else {
-            echo "Invalid password.";
+            $errorMessage = "Invalid password.";
+            echo "<p style='color: red; font-weight: bold;'>$errorMessage</p>";
         }
     } else {
         echo "Username not found.";

@@ -13,6 +13,9 @@
   />
 </head>
 <body>
+<!--<div class="popup" id="popup">-->
+<!--  Invalid password.-->
+<!--</div>-->
 <form action="./php/login.php" method="post" id="login-form">
 <div class="login-page">
   <div class="login-page-child">
@@ -30,9 +33,9 @@
   <img class="image-1-icon" alt="" src="./public/logo.png" />
 </div>
 </form>
+<div class="error-message"><?php echo $errorMessage; ?></div>
 <div class="login-page-inner">
     <button id="signup">sign up</button>
 </div>
-
 </body>
 </html>
