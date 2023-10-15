@@ -9,11 +9,6 @@
   <component name="PHPCodeSnifferOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>
-  <component name="PhpIncludePathManager">
-    <include_path>
-      <path value="" />
-    </include_path>
-  </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />

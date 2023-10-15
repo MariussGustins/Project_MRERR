@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     signup.addEventListener("click", function (){
-        window.location.href = "Register.html";
+        window.location.href = "../html/Register.html";
     });
 });
 

@@ -248,8 +248,8 @@
     left: 411px;
 }
 .items-table {
-    top: 59px;
-    left: 174px;
+    top: 88px;
+    left: 36px;
 }
 .trash-can-11s-200px-1 {
     position: absolute;
@@ -297,4 +297,28 @@
     font-size: var(--font-size-base);
     color: var(--color-black);
     font-family: var(--font-inter);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
 }

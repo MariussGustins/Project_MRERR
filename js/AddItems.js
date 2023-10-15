@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("barcode button works ;) new css");
     });
     barcode_btn.addEventListener("click", function (){
-        window.location.href = "indexQR.html";
+        window.location.href = "../html/indexQR.html";
     });
 });
 
@@ -34,6 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("qr button works ;) new css");
     });
     qr_btn.addEventListener("click", function (){
-        window.location.href = "indexQR.html";
+        window.location.href = "../html/indexQR.html";
     });
 });

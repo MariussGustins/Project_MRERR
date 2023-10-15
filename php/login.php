@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row["password"])) {
             // Successful login - Redirect to a new page
-            header("Location: /Project_MRERR/HomePage.html");
+            header("Location: /Project_MRERR/php/HomePage.php");
             exit(); // Make sure to exit to prevent further code execution
 
             // Insert successful login attempt into the login_attempts table

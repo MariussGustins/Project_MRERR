@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("add button works ;) new css");
     });
     add_btn.addEventListener("click", function (){
-        window.location.href = "AddItems.html";
+        window.location.href = "../html/AddItems.html";
     });
 });
 
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("delete button works ;) new css");
     });
     delete_btn.addEventListener("click", function (){
-        window.location.href = "index.html";
+        window.location.href = "../html/index.html";
     });
 
 //Search Button
@@ -51,6 +51,27 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("scan button works ;) new css");
     });
     scan_btn.addEventListener("click", function (){
-        window.location.href = "indexQR.html";
+        window.location.href = "../html/indexQR.html";
     });
 });
+
+function searchItems() {
+    const searchInput = document.getElementById('search').value;
+    const itemRows = document.querySelectorAll('.item-row');
+
+    itemRows.forEach(row => {
+        const itemText = row.textContent || row.innerText;
+        if (itemText.includes(searchInput)) {
+            row.style.backgroundColor = 'yellow'; // Highlight the row
+            setTimeout(() => {
+                row.style.backgroundColor = ''; // Remove the highlight after 3 seconds
+            }, 3000); // 3000 milliseconds = 3 seconds
+        }
+    });
+}
+
+function handleSearchKeyPress(event) {
+    if (event.key === 'Enter') {
+        searchItems();
+    }
+}
