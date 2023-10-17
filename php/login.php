@@ -25,20 +25,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows == 1) {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row["password"])) {
-            // Successful login - Redirect to a new page
-            header("Location: /Project_MRERR/php/HomePage.php");
-            exit(); // Make sure to exit to prevent further code execution
-
-            // Insert successful login attempt into the login_attempts table
-            $insertSql = "INSERT INTO login_attempts (username, password) VALUES ('$username', '$password')";
+            // Insert a successful login attempt into the login_attempts table
+            $insertSql = "INSERT INTO login_attempts (username, password, status) VALUES ('$username', '$password', 'success')";
             if ($conn->query($insertSql) === TRUE) {
-                // You can perform additional actions here if needed
+                // Successful login - Redirect to a new page
+                header("Location: /Project_MRERR/php/HomePage.php");
+                exit(); // Make sure to exit to prevent further code execution
             } else {
                 echo "Error recording login attempt: " . $conn->error;
             }
         } else {
-            $errorMessage = "Invalid password.";
-            echo "<p style='color: red; font-weight: bold;'>$errorMessage</p>";
+            // Insert a failed login attempt into the login_attempts table
+            $insertSql = "INSERT INTO login_attempts (username, password, status) VALUES ('$username', '$password', 'failure')";
+            if ($conn->query($insertSql) === TRUE) {
+                $errorMessage = "Invalid password.";
+                echo "<p style='color: red; font-weight: bold;'>$errorMessage</p>";
+            } else {
+                echo "Error recording login attempt: " . $conn->error;
+            }
         }
     } else {
         echo "Username not found.";
