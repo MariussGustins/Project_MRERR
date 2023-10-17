@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="author" content="Roberts Blite">
-  <meta name="viewport" content="initial-scale=1, width=device-width" />
-  <link rel="stylesheet" href="../css/global.css" />
-  <link rel="stylesheet" href="../css/Register.css" />
-  <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
-  />
+    <meta charset="utf-8"/>
+    <meta name="author" content="Roberts Blite">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/Register.css"/>
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
 </head>
 <body>
 <div class="signup-container">
-  <h1>Sign Up</h1>
-  <form action="../php/register.php" method="post" id="signup-form">
-    <div class="form-group">
-      <div class="name-group">
-        <input type="text" id="first-name" name="first-name" placeholder="First name" required>
-        <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
-      </div>
-    </div>
-    <div class="form-group">
-      <input type="email" id="email" name="email" placeholder="Email" required>
-    </div>
-    <div class="form-group">
-      <input type="text" id="username" name="username" placeholder="Username" required>
-    </div>
-    <div class="form-group">
-      <input type="password" id="password" name="password" placeholder="Password" required>
-    </div>
-    <div class="form-group">
-      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" required>
-    </div>
-    <div class="form-group agree-terms">
-      <label>
-        <input type="checkbox" id="agree-terms" name="agree-terms" required>
-        I agree to the <a href="terms-and-services.html" target="_blank">Terms and Services</a>
-      </label>
-    </div>
-    <div class="form-group">
-      <button type="submit" class="btn">Complete Sign Up</button>
-    </div>
-  </form>
+    <h1>Sign Up</h1>
+    <form action="../php/register.php" method="post" id="signup-form">
+        <div class="form-group">
+            <div class="name-group">
+                <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password"
+                   required>
+        </div>
+        <div class="form-group agree-terms">
+            <label>
+                <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                I agree to the <a href="terms-and-services.html" target="_blank">Terms and Services</a>
+            </label>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn">Complete Sign Up</button>
+        </div>
+    </form>
 </div>
 </body>
 </html>

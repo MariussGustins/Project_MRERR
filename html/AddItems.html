@@ -1,83 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="initial-scale=1, width=device-width" />
-  <meta name="author" content="Mariuss">
-  <script src="../js/AddItems.js"></script>
-  <link rel="stylesheet" href="../css/global.css" />
-  <link rel="stylesheet" href="../css/AddItems.css" />
-  <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="author" content="Mariuss">
+    <script src="../js/AddItems.js"></script>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/AddItems.css"/>
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
 </head>
 <body>
 <form action="../php/AddItems.php" method="post" id="add-form">
-<div class="add-items">
-  <div class="add-items-child">
-    <input type="text" id="barcode" name="barcode" placeholder="Barcode(Seller)">
-  </div>
-  <div class="add-items-item">
-    <input type="text" id="item_name" name="item_name" placeholder="Item" required><br><br>
-  </div>
-  <div class="add-items-amount">
+    <div class="add-items">
+        <div class="add-items-child">
+            <input type="text" id="barcode" name="barcode" placeholder="Barcode(Seller)">
+        </div>
+        <div class="add-items-item">
+            <input type="text" id="item_name" name="item_name" placeholder="Item" required><br><br>
+        </div>
+        <div class="add-items-amount">
 
-  </div>
-  <div class="add-items-inner">
-    <input type="datetime-local" id="dateandtime" name="dateandtime" placeholder="Delivery date and time" required><br><br>
-  </div>
+        </div>
+        <div class="add-items-inner">
+            <input type="datetime-local" id="dateandtime" name="dateandtime" placeholder="Delivery date and time"
+                   required><br><br>
+        </div>
 
-  <div class="add-items-contact">
-    <input type="text" id="delivery_contact_person" name="delivery_contact_person" placeholder="Delivery contact person" required><br><br>
-  </div>
-  <div class="add-items-child2">
-    <input type="number" id="amount" name="amount" placeholder="Amount">
-  </div>
-  <div class="add-items-child3">
-    <input type="number" id="price" name="price" placeholder="Price">
-  </div>
-  <div class="add-items-child4">
-    <input type="number" id="serial_nr" name="serial_nr" placeholder="Serial Nr.">
-  </div>
+        <div class="add-items-contact">
+            <input type="text" id="delivery_contact_person" name="delivery_contact_person"
+                   placeholder="Delivery contact person" required><br><br>
+        </div>
+        <div class="add-items-child2">
+            <input type="number" id="amount" name="amount" placeholder="Amount">
+        </div>
+        <div class="add-items-child3">
+            <input type="number" id="price" name="price" placeholder="Price">
+        </div>
+        <div class="add-items-child4">
+            <input type="number" id="serial_nr" name="serial_nr" placeholder="Serial Nr.">
+        </div>
 
 
-  <div class="rectangle-group">
-    <div class="group-item">
-      <button id="add">Add</button>
-<!--      <button type="button" id="qr_btn"></button>-->
-<!--      <button type="button" id="barcode_btn"></button>-->
+        <div class="rectangle-group">
+            <div class="group-item">
+                <button id="add">Add</button>
+            </div>
+        </div>
+
+        <div class="add-items-child5">
+            <input type="text" id="barcode_manufacturer" name="barcode_manufacturer"
+                   placeholder="Barcode(Manufacturer)">
+        </div>
+        <div class="add-items-child6"></div>
     </div>
-  </div>
-
-  <div class="add-items-child5">
-    <input type="text" id="barcode_manufacturer" name="barcode_manufacturer" placeholder="Barcode(Manufacturer)">
-  </div>
-  <div class="add-items-child6"></div>
-</div>
 </form>
-  <div class="item-registration">Item registration</div>
+<div class="item-registration">Item registration</div>
 
-  <div class="group-div">
+<div class="group-div">
     <div class="rectangle-container">
-      <div class="group-inner">
+        <div class="group-inner">
 
-        <button type="button" id="barcode_btn"><img
+            <button type="button" id="barcode_btn"><img
 
-                class="barcode-100s-19p.svg"
-                alt=""
-                src="../public/barcode-100s-19px.svg"
-        /></button>
-      </div>
-      <div class="group-child1">
+                    class="barcode-100s-19p.svg"
+                    alt=""
+                    src="../public/barcode-100s-19px.svg"
+            /></button>
+        </div>
+        <div class="group-child1">
 
-        <button type="button" id="qr_btn"><img
-                class="QR"
-                alt=""
-                src="../public/QR%20Code-100s-233px.svg"
-        /></button>
-      </div>
+            <button type="button" id="qr_btn"><img
+                    class="QR"
+                    alt=""
+                    src="../public/QR%20Code-100s-233px.svg"
+            /></button>
+        </div>
     </div>
-  </div>
+</div>
 </div>
 </div>
 </body>

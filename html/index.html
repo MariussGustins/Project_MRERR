@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="author" content="Mariuss">
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <script src="../js/index.js"></script>
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
     <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
@@ -14,52 +14,59 @@
 </head>
 <body>
 <form action="../php/index.php" method="post" id="remove-form">
-<div class="remove-items">
-    <div class="remove-items-child"></div>
-    <div class="remove-items-item">
-        <input type="text" id="item_name" name="item_name" placeholder="Item" required><br><br>
-    </div>
-    <div class="remove-items-inner"></div>
-    <div class="rectangle-div"></div>
-    <div class="remove-items-child1"></div>
-    <div class="remove-items-child2"></div>
-    <div class="remove-items-child3"></div>
+    <div class="remove-items">
+        <div class="remove-items-child"></div>
+        <div class="remove-items-item">
+            <input type="text" id="item_name" name="item_name" placeholder="Item" required><br><br>
+        </div>
+        <div class="remove-items-inner"></div>
+        <div class="rectangle-div"></div>
+        <div class="remove-items-child1"></div>
+        <div class="remove-items-child2"></div>
+        <div class="remove-items-child3"></div>
 
-    <div class="rectangle-parent">
-        <div class="group-child"></div>
-        <button class="remove" id="remove">Remove</button>
-    </div>
+        <div class="rectangle-parent">
+            <div class="group-child"></div>
+            <button class="remove" id="remove">Remove</button>
+        </div>
 
-    <div class="removal-date-and">
-        <input type="datetime-local" id="dateandtime" name="dateandtime" placeholder="Remove date and time" required="" style="width: 437px;height: 27px;background-color: var(--color-gainsboro-100);" >
-    </div>
-    <div class="removal-contact-person">
-        <input type="text" id="delivery_contact_person" name="delivery_contact_person" placeholder="Remove contact person" required="" style="width: 437px;height: 27px;background-color: var(--color-gainsboro-100);" >
-    </div>
+        <div class="removal-date-and">
+            <input type="datetime-local" id="dateandtime" name="dateandtime" placeholder="Remove date and time"
+                   required="" style="width: 437px;height: 27px;background-color: var(--color-gainsboro-100);">
+        </div>
+        <div class="removal-contact-person">
+            <input type="text" id="delivery_contact_person" name="delivery_contact_person"
+                   placeholder="Remove contact person" required=""
+                   style="width: 437px;height: 27px;background-color: var(--color-gainsboro-100);">
+        </div>
     </div>
     <div class="amount">
-        <input type="number" id="amount" name="amount" placeholder="amount" style="width: 94px;height: 25px;background-color: var(--color-gainsboro-100);" >
+        <input type="number" id="amount" name="amount" placeholder="amount"
+               style="width: 94px;height: 25px;background-color: var(--color-gainsboro-100);">
     </div>
 
     <div class="serial-nr">
-        <input type="number" id="serial_nr" name="serial_nr" placeholder="serial nr." style="width: 94px;height: 25px;background-color: var(--color-gainsboro-100);" >
+        <input type="number" id="serial_nr" name="serial_nr" placeholder="serial nr."
+               style="width: 94px;height: 25px;background-color: var(--color-gainsboro-100);">
     </div>
     <div class="barcode-seller">
-        <input type="text" id="barcode_seller" name="barcode_seller" placeholder="Barcode (seller)" style="width: 193px;height: 27px;background-color: var(--color-gainsboro-100);" >
+        <input type="text" id="barcode_seller" name="barcode_seller" placeholder="Barcode (seller)"
+               style="width: 193px;height: 27px;background-color: var(--color-gainsboro-100);">
     </div>
     <div class="remove-items-child4"></div>
     <div class="remove-items-child5"></div>
     <div class="barcode-manufacturer">
-        <input type="text" id="barcode_manufacturer" name="barcode_manufacturer" placeholder="Barcode (manufacturer)" style="width: 193px;height: 27px;background-color: var(--color-gainsboro-100);" >
+        <input type="text" id="barcode_manufacturer" name="barcode_manufacturer" placeholder="Barcode (manufacturer)"
+               style="width: 193px;height: 27px;background-color: var(--color-gainsboro-100);">
     </div>
 </form>
 <div class="group-inner">
     <div class="item-removal">Item removal</div>
-<button type="button" id="barcode_btn"><img
-        class="barcode-100s-19p.svg"
-        alt=""
-        src="../public/barcode-100s-19px.svg"
-/></button>
+    <button type="button" id="barcode_btn"><img
+            class="barcode-100s-19p.svg"
+            alt=""
+            src="../public/barcode-100s-19px.svg"
+    /></button>
 </div>
 
 <div class="group-child1">
