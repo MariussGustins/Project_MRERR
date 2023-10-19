@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loadingDiv.style.display = 'block';
 
         setTimeout(function() {
-            document.body.innerHTML = '';
+            document.body.innerHTML = ''; // Clears the entire page
             window.location.href = 'LoginPage.html';
         }, 3000);
     });
