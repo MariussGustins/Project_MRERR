@@ -75,13 +75,24 @@
     background-color: var(--color-gainsboro-100);
 }
 
-.login-buttons button#login,
-.login-buttons button#signup {
+.login-buttons button#login{
     width: 100px;
     height: 45px;
     margin: 0;
     margin-left: 30px;
     margin-right: 7px;
+    justify-content: space-evenly;
+    border: none;
+    font-size: var(--font-size-mini);
+    font-family: var(--font-inter);
+    transition: background-color 0.3s;
+}
+#signup {
+    width: 100px;
+    height: 45px;
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 7px;
     justify-content: space-evenly;
     border: none;
     font-size: var(--font-size-mini);
