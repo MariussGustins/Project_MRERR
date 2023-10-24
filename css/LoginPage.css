@@ -53,10 +53,10 @@
     box-shadow: 0 0 5px rgba(84, 69, 255, 0.5);
 }
 
-.login-buttons {
-    display: flex;
-    justify-content: space-between;
-}
+/*.login-buttons {*/
+/*    display: flex;*/
+/*    !*justify-content: space-between;*!*/
+/*}*/
 
 .login-buttons button {
     width: 48%;
@@ -79,9 +79,9 @@
     width: 100px;
     height: 45px;
     margin: 0;
-    margin-left: 30px;
+    margin-left: 170px;
     margin-right: 7px;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
     border: none;
     font-size: var(--font-size-mini);
     font-family: var(--font-inter);
@@ -91,9 +91,8 @@
     width: 100px;
     height: 45px;
     margin: 0;
-    margin-left: 30px;
+    margin-left: 655px;
     margin-bottom: 7px;
-    justify-content: space-evenly;
     border: none;
     font-size: var(--font-size-mini);
     font-family: var(--font-inter);
@@ -104,16 +103,15 @@
     background-color: #5445ff;
 }
 
-.login-buttons button#signup {
+#signup {
     background-color: #e5e5e5;
 }
 
-.login-buttons button#login:hover,
-.login-buttons button#signup:hover {
-    background-color: #8d8d8d;
+.login-buttons button#login:hover {
+    background-color: #0000d7;
 }
 
-.login-buttons button#login:active,
-.login-buttons button#signup:active {
-    background-color: #001cce;
+#signup:hover {
+    background-color: #8d8d8d;
+    color: white;
 }
