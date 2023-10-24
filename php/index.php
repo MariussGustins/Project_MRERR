@@ -20,10 +20,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $item_name = $_POST["item_name"];
         $serial_nr = $_POST["serial_nr"];
         $amount_removed = intval($_POST["amount"]);
+        // Retrieve the original_item_id from the items table
+        $retrieve_original_id_sql = "SELECT id FROM items WHERE item_name = '$item_name' AND serial_nr = '$serial_nr'";
+        $result = $conn->query($retrieve_original_id_sql);
 
         // Check if the item exists in the inventory
         $check_inventory_sql = "SELECT * FROM items WHERE item_name = '$item_name' AND serial_nr = '$serial_nr'";
         $inventory_result = $conn->query($check_inventory_sql);
+
+        if ($result && $result->num_rows === 1) {
+            $row = $result->fetch_assoc();
+            $original_item_id = $row['id'];
 
         if ($inventory_result && $inventory_result->num_rows > 0) {
             // Item found in inventory
@@ -44,8 +51,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $delivery_contact_person = $row['delivery_contact_person'];
                 $barcode_manufacturer = $row['barcode_manufacturer'];
 
-                $insert_removed_item_sql = "INSERT INTO removed_items (barcode, item_name, dateandtime, delivery_contact_person, amount, price, serial_nr, barcode_manufacturer, total_price)
-                    VALUES ('{$row['barcode']}', '$item_name', '$dateandtime', '$delivery_contact_person', $amount_removed, $price, '$serial_nr', '$barcode_manufacturer', $total_price)";
+                $insert_removed_item_sql = "INSERT INTO removed_items (barcode, item_name, dateandtime, delivery_contact_person, amount, price, serial_nr, barcode_manufacturer, total_price, original_item_id)
+                    VALUES ('{$row['barcode']}', '$item_name', '$dateandtime', '$delivery_contact_person', $amount_removed, $price, '$serial_nr', '$barcode_manufacturer', $total_price, $original_item_id)";
 
                 if ($conn->query($insert_removed_item_sql) === TRUE) {
                     echo "Removed $amount_removed items of $item_name successfully! Total Price: $total_price";
@@ -59,7 +66,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Item $item_name with serial number $serial_nr not found in inventory.";
         }
     } else {
-        echo "One or more form fields are missing.";
+            echo "One or more form fields are missing.";
+        }
     }
 }
 

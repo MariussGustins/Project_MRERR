@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Database connection settings
 $servername = "localhost";
 $username = "root";
@@ -10,34 +11,42 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+die("Connection failed: " . $conn->connect_error);
 }
+
+// Check if the user is logged in (assuming user_id is set in the session)
+if (isset($_SESSION['user_id'])) {
+$user_id = $_SESSION['user_id'];
+echo "User ID: " . $user_id . "<br>";
 
 // Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Check if the array keys exist before accessing them
-    if (isset($_POST["barcode"], $_POST["item_name"], $_POST["dateandtime"], $_POST["delivery_contact_person"], $_POST["amount"], $_POST["price"], $_POST["serial_nr"], $_POST["barcode_manufacturer"])) {
-        $barcode = $_POST["barcode"];
-        $item_name = $_POST["item_name"];
-        $dateandtime = $_POST["dateandtime"];
-        $delivery_contact_person = $_POST["delivery_contact_person"];
-        $amount = $_POST["amount"];
-        $price = $_POST["price"];
-        $serial_nr = $_POST["serial_nr"];
-        $barcode_manufacturer = $_POST["barcode_manufacturer"];
+// Check if the array keys exist before accessing them
+if (isset($_POST["barcode"], $_POST["item_name"], $_POST["dateandtime"], $_POST["delivery_contact_person"], $_POST["amount"], $_POST["price"], $_POST["serial_nr"], $_POST["barcode_manufacturer"])) {
+$barcode = $_POST["barcode"];
+$item_name = $_POST["item_name"];
+$dateandtime = $_POST["dateandtime"];
+$delivery_contact_person = $_POST["delivery_contact_person"];
+$amount = $_POST["amount"];
+$price = $_POST["price"];
+$serial_nr = $_POST["serial_nr"];
+$barcode_manufacturer = $_POST["barcode_manufacturer"];
 
-        // Insert data into the database
-        $sql = "INSERT INTO items (barcode, item_name, dateandtime, delivery_contact_person, amount, price, serial_nr, barcode_manufacturer)
-                VALUES ('$barcode', '$item_name', '$dateandtime', '$delivery_contact_person', '$amount', '$price', '$serial_nr', '$barcode_manufacturer')";
+// Insert data into the database
+$sql = "INSERT INTO items (barcode, item_name, dateandtime, delivery_contact_person, amount, price, serial_nr, barcode_manufacturer, user_id)
+VALUES ('$barcode', '$item_name', '$dateandtime', '$delivery_contact_person', '$amount', '$price', '$serial_nr', '$barcode_manufacturer', $user_id)";
 
-        if ($conn->query($sql) === TRUE) {
-            echo "Added successful!";
-        } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
-        }
-    } else {
-        echo "One or more form fields are missing.";
-    }
+if ($conn->query($sql) === TRUE) {
+echo "Added successful!";
+} else {
+echo "Error: " . $sql . "<br>" . $conn->error;
+}
+} else {
+echo "One or more form fields are missing.";
+}
+}
+} else {
+echo "User is not logged in."; // Handle the case when the user is not logged in
 }
 
 // Close the database connection
