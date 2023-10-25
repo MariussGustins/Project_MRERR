@@ -24,6 +24,7 @@ $result = $db->query($query);
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>HomePage</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <link rel="stylesheet" href="../css/global.css" />
