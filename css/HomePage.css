@@ -322,3 +322,7 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #ddd;
 }
+.row-zero-amount {
+    background-color: red;
+    color: white;
+}

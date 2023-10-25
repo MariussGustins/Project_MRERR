@@ -3,7 +3,7 @@
 $db = new mysqli('localhost', 'root', '', 'project_mrderr');
 
 // Number of rows to display per page
-$itemsPerPage = 10;
+$itemsPerPage = 12;
 
 // Get the current page number from the URL
 if (isset($_GET['page'])) {
@@ -66,24 +66,28 @@ $result = $db->query($query);
     />
 
     <div class="items-table">
-        <table>
-            <tr>
-                <th>ID</th>
-                <th>Item</th>
-                <th>Barcode</th>
-                <th>Date and time</th>
-            </tr>
-            <?php
-            while ($row = $result->fetch_assoc()) {
-                echo "<tr class='item-row' data-id='" . $row['id'] . "'>";
-                echo "<td>" . $row['id'] . "</td>";
-                echo "<td>" . $row['item_name'] . "</td>";
-                echo "<td>" . $row['barcode'] . "</td>";
-                echo "<td>" . $row['dateandtime'] . "</td>";
-                echo "</tr>";
-            }
-            ?>
-        </table>
+        <div style="max-height: 400px; overflow: auto;">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Item</th>
+                    <th>Barcode</th>
+                    <th>Date and time</th>
+                </tr>
+                <?php
+                while ($row = $result->fetch_assoc()) {
+                    $amount = $row['amount'];
+                    $rowStyle = ($amount == 0) ? 'background-color: red; color: white;' : '';
+                    echo "<tr style='$rowStyle' class='item-row' data-id='" . $row['id'] . "'>";
+                    echo "<td>" . $row['id'] . "</td>";
+                    echo "<td>" . $row['item_name'] . "</td>";
+                    echo "<td>" . $row['barcode'] . "</td>";
+                    echo "<td>" . $row['dateandtime'] . "</td>";
+                    echo "</tr>";
+                }
+                ?>
+            </table>
+        </div>
     </div>
 
     <!-- Pagination controls -->
