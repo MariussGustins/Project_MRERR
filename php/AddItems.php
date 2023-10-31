@@ -46,6 +46,11 @@ if (isset($_SESSION['user_id'])) {
                 $stmt_update = $conn->prepare($sql_update);
                 $stmt_update->bind_param("dssssss", $updatedAmount, $price, $updatedDeliveryContactPerson, $barcode, $item_name, $serial_nr, $barcode_manufacturer);
 
+                // Generate a QR code using the barcode and save it as an image
+                $data = "Barcode: $barcode\nItem: $item_name\nDate: $dateandtime\nContact Person: $delivery_contact_person\nAmount: $amount\nPrice: $price\nSerial Nr: $serial_nr\nManufacturer Barcode: $barcode_manufacturer";
+                $qr = new Endroid\QrCode\QrCode($data);
+                $qr->writeFile("qr_codes/$barcode.png");
+
                 if ($stmt_update->execute()) {
                     echo "Item already exists. Amount, price, and delivery contact person updated successfully!";
                 } else {
